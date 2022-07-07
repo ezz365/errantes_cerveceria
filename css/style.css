@@ -115,8 +115,6 @@ header ul{
     grid-area: nav2;
     grid-column: 2/4;
     background-color: rgb(68, 55, 55);
-    border-style: double;
-    border-color: black;
     text-align: center;
     color: white;
 }
