@@ -9,25 +9,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body class="container-sm">
-    <div class="grid-layout" class="index1">
-        <header class="header">
-            <h1 id="logo" class="animate__animated animate__fadeIn"><a href="index.html"><img src="img/logo.jpg" width="140px" height="140px" class="logo"></a></h1>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
+<body class="container">
+   <!-- <div class="grid-layout" class="index1">-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-sm">
+              <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" width="25%" height="25%"></a>
+              <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
                     <a class="nav-link" href="comidas.html">Comidas</a>
-                </li>
-                <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="bebidas.html">Bebidas</a>
-                </li>
-                <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="postres.html">Postres</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Bebidas</a>
-                </li>
-            </ul>
-        </header>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="carrousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carrousel1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carrousel2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carrousel3.png" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </nav>
+      
+    <!--<aside class="aside">
+        <ul class="categorias">
+            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
+            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
+            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
+            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
+            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
+            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
+            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
+            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
+            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
+            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
+        </ul>
+    </aside>-->
+
     <nav class="nav1">
         <!--<img id="imagen2" src="img/nav1.jpg" width="400px" height="400px" class="animate__animated animate__fadeIn">-->
         <img src="img/nav1.jpg" class="img-fluid" alt="...">
@@ -44,21 +99,6 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perferendis delectus, velit eaque voluptates quasi! Ad molestias, minus necessitatibus sunt voluptatibus quasi ipsam molestiae illum animi dicta modi? Odio, voluptatibus?
         </p>
     </nav>
-
-    <aside class="aside">
-        <ul class="categorias">
-            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
-            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
-            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
-            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
-            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
-            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
-            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
-            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
-            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
-            <li class="animate__animated animate__fadeIn">CATEGORIA</li>
-        </ul>
-    </aside>
 
     <footer class="footer">
         <ol class="animate__animated animate__fadeIn">Redes Sociales
