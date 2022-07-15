@@ -15,7 +15,7 @@ body .header {
   width: 50%;
   height: 50%;
 }
-body .header header ul {
+body .header ul {
   margin: 50px;
   margin-right: 60px;
   list-style-type: none;
@@ -27,14 +27,18 @@ body .header header ul {
   top: 60px;
   right: 60px;
 }
-body .header header ul .nav-item a:hover {
-  background-color: grey;
-  color: white;
-}
-body .header header ul #logo {
+body .header ul #logo {
   margin: 30%;
   border-radius: 60%;
   top: 60px;
+}
+body .nav-item {
+  background-color: white;
+  color: black;
+}
+body .nav-item:hover {
+  background-color: grey;
+  color: white;
 }
 body .carrousel {
   grid-area: nav1;
