@@ -6,6 +6,13 @@ body{
     background-image: url("../img/fondo.png");
     font-weight: bold;
 
+    .grid{
+        border: 4px solid black;
+        background-color: white;
+        text-align: center;
+        color: black;
+    }
+
     .header{
         grid-area: header;
         grid-column: 1/4;
@@ -57,6 +64,12 @@ body{
     }
     
     .nav1{
+        .h1{
+            padding: 100%;
+            margin: 100%;
+            margin-bottom: 20%;
+        }
+
         grid-area: nav1;
         grid-column: 1/4;
         background-color: $bgColor;
@@ -71,9 +84,7 @@ body{
         }
     
     }
-    
-    
-    
+
     .nav2{
         grid-area: nav2;
         grid-column: 2/4;
@@ -134,6 +145,29 @@ body{
             }
         }
     }
+
+    .socialMedia{
+        $mapRedes:(facebook:blue, instagram:violet, twitter:lightblue, whatsapp:green);
+    
+        @each $red, $color in $mapRedes{
+            .#{$red}{
+                color:$color;
+            }
+        }
+    
+        @mixin sizes($width, $height) {
+            height: $height;
+            width: $width;    
+        }
+    
+        .snapchat{
+            @extend .instagram;
+            background-color: white;
+            color: yellow;
+            @include sizes(600px, 600px) 
+        }
+    }
 }
+
 
 

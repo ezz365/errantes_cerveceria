@@ -5,6 +5,12 @@ body {
   background-image: url("../img/fondo.png");
   font-weight: bold;
 }
+body .grid {
+  border: 4px solid black;
+  background-color: white;
+  text-align: center;
+  color: black;
+}
 body .header {
   grid-area: header;
   grid-column: 1/4;
@@ -55,6 +61,11 @@ body .nav1 {
   text-align: center;
   color: white;
   padding: 5%;
+}
+body .nav1 .h1 {
+  padding: 100%;
+  margin: 100%;
+  margin-bottom: 20%;
 }
 body .nav1 .P1 {
   margin: 5%;
@@ -114,14 +125,25 @@ body footer ol #copyright {
   right: 45%;
   bottom: 1%;
 }
+body .socialMedia .facebook {
+  color: blue;
+}
+body .socialMedia .instagram, body .socialMedia .snapchat {
+  color: violet;
+}
+body .socialMedia .twitter {
+  color: lightblue;
+}
+body .socialMedia .whatsapp {
+  color: green;
+}
+body .socialMedia .snapchat {
+  background-color: white;
+  color: yellow;
+  height: 600px;
+  width: 600px;
+}
 
-/*
-.grid{
-    border: 4px solid black;
-    background-color: white;
-    text-align: center;
-    color: black;
-}*/
 @media screen and (max-width: 768px) {
   .grid-layout {
     grid-template-columns: 0.3fr 1fr auto;
