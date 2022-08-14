@@ -23,7 +23,13 @@ body{
         width: 50%;
         height: 50%;
     
-        
+        #logo1{
+            display: flex;
+            position: relative;
+            flex-direction: center;
+
+        }
+
          ul{
             margin: 50px;
             margin-right: 60px;
